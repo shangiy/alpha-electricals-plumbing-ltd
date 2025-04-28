@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Alpha Hardware Store</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('elegant_background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-us {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .contact-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  /* width: 600px; <-- REMOVE this fixed width */
+  max-width: calc(100% - 10cm); /* Leaves 5cm on each side */
+  margin: 0 auto; /* center it */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .map-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .map-top {
+      align-self: flex-start;
+    }
+
+    .map-bottom {
+      align-self: flex-end;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Footer social icons */
+    .footer-links, .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header id="main-header">
+  <div class="container header-container">
+    <div class="logo">
+      <a href="index.html#home">
+        <img src="images/logo Alpha.png" alt="Hardware Store Logo" id="logo-img">
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+        <li class="dropdown">
+          <a href="index.html#products">Products ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#tanks">Tanks</a></li>
+            <li><a href="index.html#plumbing">Plumbing Equipment</a></li>
+            <li><a href="index.html#lighting">Lighting & Electrical</a></li>
+            <li><a href="index.html#decor">Home & Decor</a></li>
+            <li><a href="index.html#fencing">Fencing</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li class="cart-icon" style="margin-left: auto;">
+          <a href="#cart">Cart 🛒 <span id="cart-count">0</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Contact Section -->
+<section class="contact-us">
+  <div class="contact-container">
+    <h4><p style="text-align: center;">
+      Feel right at home. Discover amazing products and quality services with friendly support.
+    </p>
+     </h4>
+    <h2>Contact Us:</h2>
+
+    <div class="contact-info">
+      <p>Email: Aplhaltd@gmail.com</p>
+      <p>Phone: 0117 484887</p>
+      <p>Location: Nandi Arcade ,Eldoret.</p>
+      <p>Location: kisumu ndogo opposite naivas elgon view mall, Eldoret City</p>
+    </div>
+
+    <div class="map-section">
+      <div class="map-container map-top">
+        <iframe 
+          src="https://maps.google.com/maps?q=nandi%20arcade%20eldoret&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="map-container map-bottom">
+        <iframe
+          src="https://maps.google.com/maps?q=Elgon%20View%20Mall%20Eldoret&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<div class="contact-info">
+  <h1>You landed at the right place</h1>
+      <p>Your trusted source for Tanks, Plumbing, Lighting, Electrical, Home Decor & more!</p>
+</div>
+
+<!-- Footer Section -->
+<footer id="contact">
+  <div class="container footer-container">
+    <div class="footer-links">
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#plumbing">Plumbing</a> |
+      <a href="#lighting">Lighting</a> |
+      <a href="#decor">Decor</a> |
+      <a href="#fencing">Fencing</a>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/" target="https://m.facebook.com/AlphaElectricalsandplumbing" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="https://m.facebook.com/AlphaElectricalsandplumbing" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/shorts/" target="_blank" aria-label="YouTube Shorts"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <p class="footer-text">Contact Us | Alpha Electricals & Plumbing ltd&copy; 2025</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

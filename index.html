@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alpha Electricals & Plumbing Ltd</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* Carousel Styles */
+    .categories-carousel {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      will-change: transform;
+    }
+
+    .carousel-item {
+      flex: 0 0 25%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .carousel-item h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .carousel-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .carousel-button {
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+
+    .carousel-button:hover {
+      background: rgba(0,0,0,0.8);
+    }
+
+    @media (max-width: 768px) {
+      .carousel-item { flex: 0 0 50%; }
+    }
+
+    @media (max-width: 480px) {
+      .carousel-item { flex: 0 0 100%; }
+    }
+  </style>
+
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header id="main-header">
+  <div class="container header-container">
+    <div class="logo">
+      <a href="#home"><img src="images/logo Alpha.png" alt="Hardware Store Logo" id="logo-img"></a>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown">
+          <a href="#">Products ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="tank.html">Tanks</a></li>
+            <li><a href="plumbing.html">Plumbing Equipment</a></li>
+            <li><a href="lighting.html">Lighting & Electrical</a></li>
+            <li><a href="decor.html">Home & Decor</a></li>
+            <li><a href="roofing.html">Roofing & Construction</a></li>
+          </ul>
+        </li>
+        
+        <li><a href="contact us.html">Contact Us</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+
+    <div class="cart-section">
+      <a href="cart.html" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </a>
+      
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Alpha Electricals & Plumbing Ltd</h1>
+    <p>Your trusted source for Tanks, Plumbing, Lighting & Electrical, Home and Decor & more!</p>
+  </div>
+</section>
+
+<!-- Categories Carousel Section -->
+<section class="categories-carousel">
+  <div class="container">
+    <h2>Browse by Category</h2>
+
+    <div class="carousel">
+      <div class="carousel-track">
+
+        <!-- Carousel Items -->
+        <div class="carousel-item">
+          <a href="tanks.html">
+            <img src="images/kentank 2000l.png" alt="Tanks">
+            <h3>Tanks</h3>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="plumbing.html">
+            <img src="images/ppr joints.png" alt="Plumbing Equipment">
+            <h3>Plumbing Equipment</h3>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="lighting.html">
+            <img src="images/aesthetic Light.png"alt="Lighting & Electrical">
+            <h3>Lighting & Electrical</h3>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="decor.html">
+            <img src="images/birds lights.png" alt="Home & Decor">
+            <h3>Home & Decor</h3>
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <a href="roofing.html">
+            <img src="images/roof 2.png" alt="Roofing & Fencing">
+            <h3>Roofing & Fencing</h3>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <div class="carousel-buttons">
+        <button class="carousel-button prev">&#8592;</button>
+        <button class="carousel-button next">&#8594;</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="fullwidth-container featured-products">
+  <div class="container"><h2>Featured Products</h2></div>
+  <div class="products-grid">
+
+    <!-- Featured Product Item - Cuboid Tank -->
+    <div class="product-item" id="cuboidTank">
+      <img src="images/cuboidTank.PNG" alt="Cuboid Tank">
+      <h3>Cuboid Tank</h3>
+      <p class="price">Ksh 5,400.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - Ample Light -->
+    <div class="product-item" id="ampleLight">
+      <img src="images/ample Light.png" alt="Ample Light">
+      <h3>Ample Light</h3>
+      <p class="price">Ksh 2,500.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - Kitchen Taps -->
+    <div class="product-item" id="kitchenTaps">
+      <img src="images/kitchen taps.png" alt="Kitchen Taps">
+      <h3>Kitchen Taps</h3>
+      <p class="price">Ksh 1,200.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - Elegant Bulb Design -->
+    <div class="product-item" id="elegantBulb">
+      <img src="images/septic Tank.png" alt="Elegant Bulb Design">
+      <h3>Septic Tank</h3>
+      <p class="price">Ksh 5,400.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - Solar Heater -->
+    <div class="product-item" id="solarHeater">
+      <img src="images/solar heater.png" alt="Solar Heater">
+      <h3>Solar Heater</h3>
+      <p class="price">Ksh 12,000.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Lighting -->
+    <div class="product-item" id="lighting">
+      <img src="images/exquisite chandelier.jpg" alt="Artistic Lights">
+      <h3>Artistic Light Fixture</h3>
+      <p class="price">Ksh 500.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+      <img src="images/elegant bulb designs.png" alt="Elegant Bulb">
+      <h3>Elegant Bulb Design</h3>
+      <p class="price">Ksh 600.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+      <img src="images/decor lighting design.png" alt="LED Strip">
+      <h3>Decor Lighting</h3>
+      <p class="price">Ksh 350.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Plumbing -->
+    <div class="product-item" id="plumbing">
+      <img src="images/ppr pipe fittings.png" alt="PPR Fittings">
+      <h3>PPR Pipe Fittings</h3>
+      <p class="price">Ksh 30.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+      <img src="images/ppr pipes.png" alt="PPR Pipes">
+      <h3>PPR Pipes</h3>
+      <p class="price">Ksh 200.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-item">
+      <img src="images/versatile switches & Sockets.png" alt="Switches & Sockets">
+      <h3>Switches & Sockets</h3>
+      <p class="price">Ksh 250.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - kitchen bright light -->
+    <div class="product-item" id="kitchen bright light">
+      <img src="images/kitchen bright light.png" alt="kitchen bright light">
+      <h3>kitchen bright light</h3>
+      <p class="price">Ksh 2,500.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - dynamicSink-->
+    <div class="product-item" id="dynamicSink">
+      <img src="images/dynamic sink.png" alt="dynamic sink">
+      <h3>Dynamic Sink</h3>
+      <p class="price">Ksh 1,200.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <!-- Featured Product Item - MDF&Chipboard-->
+    <div class="product-item" id="MDF&Chipboard">
+      <img src="images/MDF & chipboard.png" alt="MDF & Chipboard">
+      <h3>MDF & Chipboard</h3>
+      <p class="price">Ksh 5,400.00</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="about-preview">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>We provide top-quality hardware products to meet all your construction and home improvement needs.</p>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="contact">
+  <div class="container footer-container">
+    <div class="footer-links">
+      <a href="#home">Home</a> |
+      <a href="#about">About</a> |
+      <a href="#plumbing">Plumbing</a> |
+      <a href="#lighting">Lighting</a> |
+      <a href="#decor">Decor</a> |
+      <a href="#roofing">Roofing</a>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+    <p class="footer-text">Contact Us | Alpha Electricals & Plumbing Ltd &copy; 2025</p>
+  </div>
+</footer>
+
+<!-- JavaScript: Carousel Logic -->
+<script>
+  const track = document.querySelector('.carousel-track');
+  const items = Array.from(document.querySelectorAll('.carousel-item'));
+  const prevButton = document.querySelector('.carousel-button.prev');
+  const nextButton = document.querySelector('.carousel-button.next');
+  
+  let scrollSpeed = 1; // pixels per frame
+  let position = 0;
+  
+  // Clone items to make it endless
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    track.appendChild(clone);
+  });
+  
+  // Animate the track smoothly
+  function animateCarousel() {
+    position -= scrollSpeed;
+    if (Math.abs(position) >= track.scrollWidth / 2) {
+      position = 0; // Reset position when half the cloned track has scrolled
+    }
+    track.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animateCarousel);
+  }
+  
+  // Start animation
+  animateCarousel();
+  
+  // Manual controls (optional if you want buttons to move faster)
+  nextButton.addEventListener('click', () => {
+    position -= 200; // move 200px left
+  });
+  
+  prevButton.addEventListener('click', () => {
+    position += 200; // move 200px right
+  });
+  
+  </script>
+  
+  <script>
+    // Cart functionality
+    let cartCount = 0;
+    
+    // Find all "Add to Cart" buttons
+    const addToCartButtons = document.querySelectorAll('.product-item button');
+    
+    // Find the cart count element
+    const cartCountElement = document.getElementById('cart-count');
+    
+    // Add event listener to each button
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        cartCount++;
+        cartCountElement.textContent = cartCount;
+      });
+    });
+
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
+  
+
+</body>
+</html>
